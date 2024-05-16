@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- JavaScript Links -->
+    <script src="./index.js" defer></script>
+    <title>Accordion Elem</title>
+</head>
+<body>
+<h1>All CSS Accordion</h1>
+<div class="accordion">
+    <!-- span to target fix closing accordion -->
+    <span class="target-fix" id="accordion"></span>
+
+    <!-- First Accoridon Option -->
+    <div>
+        <!-- span to target fix accordion -->
+        <span class="target-fix" id="accordion1"></span>
+
+        <!-- Link to open accordion, hidden when open -->
+        <a href="#accordion1" id="open-accordion1" title="open">FSO Officers</a>
+
+        <!-- Link to close accordion, hidden when closed -->
+        <a href="#accordion" id="close-accordion1" title="close">FSO Officers</a>
+
+        <!-- Accorion content goes in this div -->
+        <div class="accordion-content">
+            <p class="card-container">
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="readme">
+    <p>For multiple accordions on a single page, repeat process, but assign different id names.
+        <a href="https://codepen.io/pollardld/full/lthAF"> Multiple accordions example</a>
+    </p>
+
+    <p>Beware use on Android 2.2 and 2.3. The default browser on these versions does some curious things.</p>
+</div>
+</body>
+</html>
